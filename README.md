@@ -43,3 +43,21 @@ Webserver study page (questions + hyperlinks), one administration lesson per
 system she administers (PostgreSQL, Apache, James), a ClamWin virus-scan
 maintenance task, a white-hat firewall audit exercise, and a Python IDE
 lesson on authoring new admin scripts. See `00-curriculum.md` for details.
+
+## Training status (2026-09-30)
+
+- **PAUSED** — training is paused at Kit's order pending his resolution
+  of the Gwen-model access issue. The tutor is off; Gwen is staged at
+  Lesson 3, turn 14, ready to resume on his word.
+- **The model** — Gwen is `qwen3:0.6b` plus a Modelfile system prompt,
+  running as `gwen:latest` in the laptop's Ollama (verified working via
+  live prompt 2026-09-30). No safetensor install is needed; pgai reaches
+  her through Ollama's HTTP API.
+- **Completed** — Lessons 1–2 and the Lesson 3 skeleton (text diagrams);
+  the mail-server lesson produced a real admin mailbox, not an exercise.
+
+## Known issues
+
+- **Training cannot run concurrently with deployment work** — sessions
+  were paused during the Lampy supervisord incident and the WSL
+  localhost-forwarding outage.
